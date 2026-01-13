@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fit Mind</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/favicon3.png">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    
+    <!-- Adobe Fonts -->
+    <link rel="stylesheet" href="https://use.typekit.net/bou4ttl.css">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'playfair': ['"Playfair Display"', 'serif'],
+                        'ivy': ['"ivymode"', 'sans-serif'],
+                        'haas': ['"neue-haas-grotesk-display"', 'sans-serif'],
+                    },
+                    colors: {
+                        'purple-primary': '#810b87',
+                        'purple-dark': '#660970',
+                        'purple-light': '#a394b3',
+                        'orange-primary': '#ff9b2e',
+                        'gradient-orange': '#ffab5f',
+                        'gradient-pink': '#e897d9',
+                        'gradient-cyan': '#80d6dd',
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="min-h-screen overflow-x-hidden font-haas bg-white">
+    
+    <!-- Main Content -->
+    <div class="flex flex-col items-center justify-center px-4 sm:px-6 lg:px-8" style="padding-top: 12.5vh;">
+        <img src="assets/fitmind.png" alt="Fitmind Logo" class="w-48 sm:w-64 md:w-80 lg:w-96">
+        
+        <!-- Countdown Section -->
+        <div class="mt-8 sm:mt-10 md:mt-12 text-center w-full">
+            <p class="text-xl sm:text-2xl md:text-3xl font-haas text-purple-primary mb-6 sm:mb-8">Launching Soon...</p>
+            
+            <!-- Countdown Timer -->
+            <div id="countdown" class="flex gap-2 sm:gap-3 md:gap-6 lg:gap-8 justify-center flex-wrap max-w-lg mx-auto">
+                <div class="flex flex-col items-center bg-purple-primary/10 rounded-lg p-3 sm:p-4 md:p-5 min-w-[4.5rem] sm:min-w-20 md:min-w-24">
+                    <span id="days" class="text-3xl sm:text-4xl md:text-4xl font-bold text-purple-primary font-mono block leading-none">00</span>
+                    <span class="text-xs sm:text-sm md:text-sm text-purple-dark font-haas mt-1 sm:mt-2">Days</span>
+                </div>
+                <div class="flex flex-col items-center bg-purple-primary/10 rounded-lg p-3 sm:p-4 md:p-5 min-w-[4.5rem] sm:min-w-20 md:min-w-24">
+                    <span id="hours" class="text-3xl sm:text-4xl md:text-4xl font-bold text-purple-primary font-mono block leading-none">00</span>
+                    <span class="text-xs sm:text-sm md:text-sm text-purple-dark font-haas mt-1 sm:mt-2">Hours</span>
+                </div>
+                <div class="flex flex-col items-center bg-purple-primary/10 rounded-lg p-3 sm:p-4 md:p-5 min-w-[4.5rem] sm:min-w-20 md:min-w-24">
+                    <span id="minutes" class="text-3xl sm:text-4xl md:text-4xl font-bold text-purple-primary font-mono block leading-none">00</span>
+                    <span class="text-xs sm:text-sm md:text-sm text-purple-dark font-haas mt-1 sm:mt-2">Minutes</span>
+                </div>
+                <div class="flex flex-col items-center bg-purple-primary/10 rounded-lg p-3 sm:p-4 md:p-5 min-w-[4.5rem] sm:min-w-20 md:min-w-24">
+                    <span id="seconds" class="text-3xl sm:text-4xl md:text-4xl font-bold text-purple-primary font-mono block leading-none">00</span>
+                    <span class="text-xs sm:text-sm md:text-sm text-purple-dark font-haas mt-1 sm:mt-2">Seconds</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

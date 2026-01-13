@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Fit Mind</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/favicon3.png">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    
+    <!-- Adobe Fonts -->
+    <link rel="stylesheet" href="https://use.typekit.net/bou4ttl.css">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'playfair': ['"Playfair Display"', 'serif'],
+                        'ivy': ['"ivymode"', 'sans-serif'],
+                        'haas': ['"neue-haas-grotesk-display"', 'sans-serif'],
+                    },
+                    colors: {
+                        'purple-primary': '#810b87',
+                        'purple-dark': '#660970',
+                        'purple-light': '#a394b3',
+                        'orange-primary': '#ff9b2e',
+                        'cyan-light': '#00bcd4',
+                        'cyan-dark': '#0097a7',
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="min-h-screen overflow-x-hidden font-haas scroll-smooth">
+    <!-- Navigation Bar -->
+    <nav class="fixed top-0 w-full bg-white/95 backdrop-blur-lg shadow-md z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <div class="flex items-center">
+                <img src="assets/fitmind.png" alt="FitMind" class="h-6 sm:h-[30px] w-auto">
+            </div>
+            
+            <!-- Desktop Menu -->
+            <ul class="hidden md:flex space-x-6 lg:space-x-8 text-[13px] font-ivy">
+                <li><a href="index.html" class="text-gray-800 font-medium hover:text-purple-light transition-colors duration-300">Home</a></li>
+                <li><a href="about.html" class="text-gray-800 font-medium hover:text-purple-light transition-colors duration-300">About</a></li>
+                <li><a href="#work" class="text-gray-800 font-medium hover:text-purple-light transition-colors duration-300">Work With Us</a></li>
+                <li><a href="#gallery" class="text-gray-800 font-medium hover:text-purple-light transition-colors duration-300">Gallery</a></li>
+                <li><a href="#contact" class="text-gray-800 font-medium hover:text-purple-light transition-colors duration-300">Contact Us</a></li>
+            </ul>
+            
+            <!-- Mobile Hamburger -->
+            <button class="hamburger md:hidden flex flex-col gap-1 cursor-pointer">
+                <span class="bar w-6 h-0.5 bg-gray-800 rounded transition-all duration-300"></span>
+                <span class="bar w-6 h-0.5 bg-gray-800 rounded transition-all duration-300"></span>
+                <span class="bar w-6 h-0.5 bg-gray-800 rounded transition-all duration-300"></span>
+            </button>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div class="nav-menu md:hidden fixed left-[-100%] top-[70px] w-full bg-white/98 text-center transition-all duration-300 shadow-lg">
+            <ul class="flex flex-col py-8 space-y-4 text-[13px] font-ivy">
+                <li><a href="index.html" class="nav-link block py-2 text-gray-800 font-medium hover:text-purple-light">Home</a></li>
+                <li><a href="about.html" class="nav-link block py-2 text-gray-800 font-medium hover:text-purple-light">About</a></li>
+                <li><a href="#work" class="nav-link block py-2 text-gray-800 font-medium hover:text-purple-light">Work With Us</a></li>
+                <li><a href="#gallery" class="nav-link block py-2 text-gray-800 font-medium hover:text-purple-light">Gallery</a></li>
+                <li><a href="#contact" class="nav-link block py-2 text-gray-800 font-medium hover:text-purple-light">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- About Hero Section -->
+    <div class="gradient-section relative min-h-screen flex items-start justify-center overflow-hidden">
+        <div class="flex flex-col lg:flex-row items-start justify-between max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 pt-24 sm:pt-28 lg:pt-32 gap-6 sm:gap-8 lg:gap-12 xl:gap-16 h-full">
+            <!-- Image -->
+            <div class="flex-[1.8] max-w-full lg:max-w-[55vw] xl:max-w-[850px] w-full">
+                <img src="assets/about_main.png" alt="FitMind Coaching" class="w-full h-auto object-contain">
+            </div>
+            
+            <!-- Text Content -->
+            <div class="flex-1 max-w-full lg:max-w-[550px] text-white flex flex-col">
+                <h1 class="font-playfair font-semibold text-3xl sm:text-4xl md:text-5xl lg:text-[3.4rem] mb-4 sm:mb-6 leading-tight tracking-wide">
+                    We help you<br>reach your goals
+                </h1>
+                <p class="font-haas text-sm sm:text-base lg:text-lg xl:text-xl leading-relaxed tracking-wide text-justify mb-4 sm:mb-6">
+                    We are a human centered coaching company helping individuals, teams, and organizations grow with intention, clarity and alignment.
+                </p>
+                <p class="font-haas text-sm sm:text-base lg:text-lg xl:text-xl leading-relaxed tracking-wide text-justify mb-6 sm:mb-8 lg:mb-auto">
+                    Through assessments, seminars, and wellness experiences, we help you lasting transformation by focusing on mindset and human connection.
+                </p>
+                <a href="#contact" class="inline-block mt-auto px-6 sm:px-7 py-3 sm:py-3.5 min-w-[180px] sm:min-w-[200px] w-fit bg-purple-primary text-white font-haas text-base sm:text-lg font-medium tracking-widest rounded-full hover:bg-purple-dark transition-all duration-300 hover:-translate-y-0.5 text-center">
+                    Book a Consultation
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Client Logo Bar -->
+    <div class="bg-white py-7 sm:py-8 overflow-hidden">
+        <div class="overflow-hidden">
+            <div class="logo-scroll flex gap-8 sm:gap-10 lg:gap-12 w-fit">
+                <!-- Client Logos -->
+                <img src="assets/client-logos/AgenceFrancaiseDeDeveloppement.svg" alt="Agence Française De Développement" class="h-14 sm:h-16 w-auto min-w-[56px] sm:min-w-[68px] max-w-[140px] sm:max-w-[170px] object-contain p-2 hover:opacity-80 transition-opacity">
+                <img src="assets/client-logos/CapitalBank.png" alt="Capital Bank" class="h-14 sm:h-16 w-auto min-w-[56px] sm:min-w-[68px] max-w-[140px] sm:max-w-[170px] object-contain p-2 hover:opacity-80 transition-opacity">
+                <img src="assets/client-logos/CPS-Logo-1.jpg" alt="CPS" class="h-14 sm:h-16 w-auto min-w-[56px] sm:min-w-[68px] max-w-[140px] sm:max-w-[170px] object-contain p-2 hover:opacity-80 transition-opacity">
+                <img src="assets/client-logos/Carribex.jpg" alt="Carribex" class="h-14 sm:h-16 w-auto min-w-[56px] sm:min-w-[68px] max-w-[140px] sm:max-w-[170px] object-contain p-2 hover:opacity-80 transition-opacity">
+                <img src="assets/client-logos/Haiti+Bites+logo_vf.webp" alt="Haiti Bites" class="h-14 sm:h-16 w-auto min-w-[56px] sm:min-w-[68px] max-w-[140px] sm:max-w-[170px] object-contain p-2 hover:opacity-80 transition-opacity">
+                <img src="assets/client-logos/KaribeHotel.png" alt="Karibe Hotel" class="h-14 sm:h-16 w-auto min-w-[56px] sm:min-w-[68px] max-w-[140px] sm:max-w-[170px] object-contain p-2 hover:opacity-80 transition-opacity">
+                <img src="assets/client-logos/PanAmerican.png" alt="Pan American" class="h-14 sm:h-16 w-auto min-w-[56px] sm:min-w-[68px] max-w-[140px] sm:max-w-[170px] object-contain p-2 hover:opacity-80 transition-opacity">
+                <img src="assets/client-logos/Barbancourt-logo-e1761875118721.webp" alt="Rhum Barbancourt" class="h-14 sm:h-16 w-auto min-w-[56px] sm:min-w-[68px] max-w-[140px] sm:max-w-[170px] object-contain p-2 hover:opacity-80 transition-opacity">
+                <img src="assets/client-logos/Rotaryclublogo.png" alt="Rotary Club" class="h-14 sm:h-16 w-auto min-w-[56px] sm:min-w-[68px] max-w-[140px] sm:max-w-[170px] object-contain p-2 hover:opacity-80 transition-opacity">
+                <img src="assets/client-logos/unibank.png" alt="Unibank" class="h-14 sm:h-16 w-auto min-w-[56px] sm:min-w-[68px] max-w-[140px] sm:max-w-[170px] object-contain p-2 hover:opacity-80 transition-opacity">
+                <img src="assets/client-logos/Sunrise_logo.svg" alt="Sunrise" class="h-14 sm:h-16 w-auto min-w-[56px] sm:min-w-[68px] max-w-[140px] sm:max-w-[170px] object-contain p-2 hover:opacity-80 transition-opacity">
+                <img src="assets/client-logos/TiMalice.png" alt="Ti Malice" class="h-14 sm:h-16 w-auto min-w-[56px] sm:min-w-[68px] max-w-[140px] sm:max-w-[170px] object-contain p-2 hover:opacity-80 transition-opacity">
+                <img src="assets/client-logos/USAID-Identity.svg.png" alt="USAID" class="h-14 sm:h-16 w-auto min-w-[56px] sm:min-w-[68px] max-w-[140px] sm:max-w-[170px] object-contain p-2 hover:opacity-80 transition-opacity">
+                <img src="assets/client-logos/atelierdeschefs.jpeg" alt="Atelier des Chefs" class="h-14 sm:h-16 w-auto min-w-[56px] sm:min-w-[68px] max-w-[140px] sm:max-w-[170px] object-contain p-2 hover:opacity-80 transition-opacity">
+                <img src="assets/client-logos/kakoskids.jpg" alt="Kakos Kids" class="h-14 sm:h-16 w-auto min-w-[56px] sm:min-w-[68px] max-w-[140px] sm:max-w-[170px] object-contain p-2 hover:opacity-80 transition-opacity">
+                <img src="assets/client-logos/pointchaud.png" alt="Point Chaud" class="h-14 sm:h-16 w-auto min-w-[56px] sm:min-w-[68px] max-w-[140px] sm:max-w-[170px] object-contain p-2 hover:opacity-80 transition-opacity">
+                <img src="assets/client-logos/quischrschool.jpeg" alt="Quischr School" class="h-14 sm:h-16 w-auto min-w-[56px] sm:min-w-[68px] max-w-[140px] sm:max-w-[170px] object-contain p-2 hover:opacity-80 transition-opacity">
+                <img src="assets/client-logos/Compassion_international.png" alt="Compassion International" class="h-14 sm:h-16 w-auto min-w-[56px] sm:min-w-[68px] max-w-[140px] sm:max-w-[170px] object-contain p-2 hover:opacity-80 transition-opacity">
+                <img src="assets/client-logos/AIC_logo.jpeg" alt="AIC" class="h-14 sm:h-16 w-auto min-w-[56px] sm:min-w-[68px] max-w-[140px] sm:max-w-[170px] object-contain p-2 hover:opacity-80 transition-opacity">
+                <img src="assets/client-logos/sunpower_logo.png" alt="Sunpower" class="h-14 sm:h-16 w-auto min-w-[56px] sm:min-w-[68px] max-w-[140px] sm:max-w-[170px] object-contain p-2 hover:opacity-80 transition-opacity">
+                
+                <!-- Duplicate set for seamless loop -->
+                <img src="assets/client-logos/AgenceFrancaiseDeDeveloppement.svg" alt="Agence Française De Développement" class="h-14 sm:h-16 w-auto min-w-[56px] sm:min-w-[68px] max-w-[140px] sm:max-w-[170px] object-contain p-2 hover:opacity-80 transition-opacity">
+                <img src="assets/client-logos/CapitalBank.png" alt="Capital Bank" class="h-14 sm:h-16 w-auto min-w-[56px] sm:min-w-[68px] max-w-[140px] sm:max-w-[170px] object-contain p-2 hover:opacity-80 transition-opacity">
+                <img src="assets/client-logos/CPS-Logo-1.jpg" alt="CPS" class="h-14 sm:h-16 w-auto min-w-[56px] sm:min-w-[68px] max-w-[140px] sm:max-w-[170px] object-contain p-2 hover:opacity-80 transition-opacity">
+                <img src="assets/client-logos/Carribex.jpg" alt="Carribex" class="h-14 sm:h-16 w-auto min-w-[56px] sm:min-w-[68px] max-w-[140px] sm:max-w-[170px] object-contain p-2 hover:opacity-80 transition-opacity">
+                <img src="assets/client-logos/Haiti+Bites+logo_vf.webp" alt="Haiti Bites" class="h-14 sm:h-16 w-auto min-w-[56px] sm:min-w-[68px] max-w-[140px] sm:max-w-[170px] object-contain p-2 hover:opacity-80 transition-opacity">
+                <img src="assets/client-logos/KaribeHotel.png" alt="Karibe Hotel" class="h-14 sm:h-16 w-auto min-w-[56px] sm:min-w-[68px] max-w-[140px] sm:max-w-[170px] object-contain p-2 hover:opacity-80 transition-opacity">
+                <img src="assets/client-logos/PanAmerican.png" alt="Pan American" class="h-14 sm:h-16 w-auto min-w-[56px] sm:min-w-[68px] max-w-[140px] sm:max-w-[170px] object-contain p-2 hover:opacity-80 transition-opacity">
+                <img src="assets/client-logos/Barbancourt-logo-e1761875118721.webp" alt="Rhum Barbancourt" class="h-14 sm:h-16 w-auto min-w-[56px] sm:min-w-[68px] max-w-[140px] sm:max-w-[170px] object-contain p-2 hover:opacity-80 transition-opacity">
+                <img src="assets/client-logos/Rotaryclublogo.png" alt="Rotary Club" class="h-14 sm:h-16 w-auto min-w-[56px] sm:min-w-[68px] max-w-[140px] sm:max-w-[170px] object-contain p-2 hover:opacity-80 transition-opacity">
+                <img src="assets/client-logos/unibank.png" alt="Unibank" class="h-14 sm:h-16 w-auto min-w-[56px] sm:min-w-[68px] max-w-[140px] sm:max-w-[170px] object-contain p-2 hover:opacity-80 transition-opacity">
+                <img src="assets/client-logos/Sunrise_logo.svg" alt="Sunrise" class="h-14 sm:h-16 w-auto min-w-[56px] sm:min-w-[68px] max-w-[140px] sm:max-w-[170px] object-contain p-2 hover:opacity-80 transition-opacity">
+                <img src="assets/client-logos/TiMalice.png" alt="Ti Malice" class="h-14 sm:h-16 w-auto min-w-[56px] sm:min-w-[68px] max-w-[140px] sm:max-w-[170px] object-contain p-2 hover:opacity-80 transition-opacity">
+                <img src="assets/client-logos/USAID-Identity.svg.png" alt="USAID" class="h-14 sm:h-16 w-auto min-w-[56px] sm:min-w-[68px] max-w-[140px] sm:max-w-[170px] object-contain p-2 hover:opacity-80 transition-opacity">
+                <img src="assets/client-logos/atelierdeschefs.jpeg" alt="Atelier des Chefs" class="h-14 sm:h-16 w-auto min-w-[56px] sm:min-w-[68px] max-w-[140px] sm:max-w-[170px] object-contain p-2 hover:opacity-80 transition-opacity">
+                <img src="assets/client-logos/kakoskids.jpg" alt="Kakos Kids" class="h-14 sm:h-16 w-auto min-w-[56px] sm:min-w-[68px] max-w-[140px] sm:max-w-[170px] object-contain p-2 hover:opacity-80 transition-opacity">
+                <img src="assets/client-logos/pointchaud.png" alt="Point Chaud" class="h-14 sm:h-16 w-auto min-w-[56px] sm:min-w-[68px] max-w-[140px] sm:max-w-[170px] object-contain p-2 hover:opacity-80 transition-opacity">
+                <img src="assets/client-logos/quischrschool.jpeg" alt="Quischr School" class="h-14 sm:h-16 w-auto min-w-[56px] sm:min-w-[68px] max-w-[140px] sm:max-w-[170px] object-contain p-2 hover:opacity-80 transition-opacity">
+                <img src="assets/client-logos/Compassion_international.png" alt="Compassion International" class="h-14 sm:h-16 w-auto min-w-[56px] sm:min-w-[68px] max-w-[140px] sm:max-w-[170px] object-contain p-2 hover:opacity-80 transition-opacity">
+                <img src="assets/client-logos/AIC_logo.jpeg" alt="AIC" class="h-14 sm:h-16 w-auto min-w-[56px] sm:min-w-[68px] max-w-[140px] sm:max-w-[170px] object-contain p-2 hover:opacity-80 transition-opacity">
+                <img src="assets/client-logos/sunpower_logo.png" alt="Sunpower" class="h-14 sm:h-16 w-auto min-w-[56px] sm:min-w-[68px] max-w-[140px] sm:max-w-[170px] object-contain p-2 hover:opacity-80 transition-opacity">
+            </div>
+        </div>
+    </div>
+
+    <!-- Testimonial Section -->
+    <div class="bg-orange-primary py-12 sm:py-16 px-4 sm:px-8 flex items-center justify-center relative min-h-[300px]">
+        <button class="testimonial-arrow absolute bg-transparent border-none text-white cursor-pointer p-4 top-1/2 -translate-y-1/2 left-2 sm:left-4 transition-all duration-300 hover:scale-110 hover:opacity-80 z-10" aria-label="Previous testimonial">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="15 18 9 12 15 6"></polyline>
+            </svg>
+        </button>
+        
+        <div class="max-w-4xl mx-auto text-center relative px-8 sm:px-12">
+            <div class="text-7xl sm:text-8xl text-white font-serif leading-[0.5] mb-4">"</div>
+            <div class="testimonial-carousel relative min-h-[180px]">
+                <div class="testimonial-item active">
+                    <p class="font-playfair text-lg sm:text-xl md:text-2xl text-white leading-relaxed mb-6">
+                        Je dois vous signaler que les impacts des formations sur les comportements ont été signi catifs et je vous en félicite!
+                    </p>
+                    <p class="font-playfair font-semibold text-base sm:text-lg text-white mb-1">Muriel ANTOINE</p>
+                    <p class="font-playfair text-sm sm:text-base text-white font-light italic">
+                        Assistant Vice-Président et Directeur Engagement & Valorisation at Capital Bank
+                    </p>
+                </div>
+                <!-- Additional testimonials will be added here -->
+            </div>
+        </div>
+        
+        <button class="testimonial-arrow absolute bg-transparent border-none text-white cursor-pointer p-4 top-1/2 -translate-y-1/2 right-2 sm:right-4 transition-all duration-300 hover:scale-110 hover:opacity-80 z-10" aria-label="Next testimonial">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+        </button>
+    </div>
+
+    <!-- IT ALL STARTED Section -->
+    <div class="gradient-section relative px-4 py-12 sm:py-16">
+        <div class="max-w-7xl mx-auto flex flex-col lg:flex-row gap-12 sm:gap-16 items-center">
+            <div class="flex-1 max-w-full lg:max-w-[550px]">
+                <h2 class="font-playfair font-medium text-3xl sm:text-4xl md:text-5xl text-white mb-6 sm:mb-8 leading-tight tracking-wide">
+                    IT ALL STARTED<br>WITH A SHIFT
+                </h2>
+                <div class="space-y-5 mb-8">
+                    <p class="font-playfair text-sm sm:text-base leading-relaxed text-white">
+                        FitMind was founded in 2019 by Chantal, inspired by her experience in the corporate world and her deep belief that real change starts in the mind. After witnessing how poor communication, lack of accountability, and external validation limited both individuals and organizations, she began exploring the connection between mindset, performance, and self esteem.
+                    </p>
+                    <p class="font-playfair text-sm sm:text-base leading-relaxed text-white">
+                        Drawing from her background in psychology, fitness, leadership, and life coaching, Chantal created FitMind to integrate physical, mental, and emotional growth into one aligned approach. Leaving a 15 year executive career in banking to follow this vision, she built FitMind around a simple guiding principle: <strong>Shape your mind, Change your life.</strong>
+                    </p>
+                </div>
+                <a href="#contact" class="inline-block bg-cyan-light text-white px-8 sm:px-10 py-3 sm:py-4 rounded-full font-playfair font-medium text-base sm:text-lg hover:bg-cyan-dark transition-all duration-300 hover:-translate-y-0.5">
+                    Join Us
+                </a>
+            </div>
+            <div class="flex-1 flex justify-end">
+                <img src="assets/c_grass.png" alt="Chantal" class="w-full max-w-md lg:max-w-[450px] h-auto rounded-lg shadow-2xl">
+            </div>
+        </div>
+    </div>
+
+    <!-- Statistics Section -->
+    <div class="bg-purple-primary py-12 sm:py-16">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center justify-around gap-8 md:gap-8">
+                <div class="text-center flex-1">
+                    <div class="font-playfair font-bold text-5xl sm:text-6xl md:text-7xl text-white leading-none mb-2">25+</div>
+                    <div class="font-playfair font-medium text-sm sm:text-base text-white tracking-wide">COMPANIES ACROSS HAITI</div>
+                </div>
+                <div class="hidden md:block w-0.5 h-20 bg-white"></div>
+                <div class="text-center flex-1">
+                    <div class="font-playfair font-bold text-5xl sm:text-6xl md:text-7xl text-white leading-none mb-2">2500+</div>
+                    <div class="font-playfair font-medium text-sm sm:text-base text-white tracking-wide">HOURS OF SEMINARS</div>
+                </div>
+                <div class="hidden md:block w-0.5 h-20 bg-white"></div>
+                <div class="text-center flex-1">
+                    <div class="font-playfair font-bold text-5xl sm:text-6xl md:text-7xl text-white leading-none mb-2">3000+</div>
+                    <div class="font-playfair font-medium text-sm sm:text-base text-white tracking-wide">EMPLOYEES TRAINED</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Community Section -->
+    <div class="bg-white py-12 sm:py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col lg:flex-row gap-12 sm:gap-16 items-center">
+            <div class="flex-1 grid grid-cols-2 gap-4 sm:gap-6">
+                <img src="assets/community_06.png" alt="FitMind Community" class="w-full h-auto object-cover rounded-lg shadow-lg">
+                <img src="assets/community_05.png" alt="FitMind Team" class="w-full h-auto object-cover rounded-lg shadow-lg">
+            </div>
+            <div class="flex-1 max-w-full lg:max-w-[550px]">
+                <h2 class="font-playfair font-semibold text-3xl sm:text-4xl md:text-5xl text-purple-primary mb-6 sm:mb-8 leading-tight tracking-wide">
+                    COMMUNITY AT<br>THE CORE
+                </h2>
+                <p class="font-playfair text-sm sm:text-base leading-relaxed text-gray-800 mb-8">
+                    Beyond performance and strategy, FitMind is deeply committed to creating spaces of trust and openness. Our work encourages reflection, honest dialogue, and mutual support. Whether in a boardroom or a wellness circle, we believe growth happens best in environments where people feel seen, supported, and empowered.
+                </p>
+                <a href="#contact" class="inline-block bg-cyan-light text-white px-8 sm:px-10 py-3 sm:py-4 rounded-full font-playfair font-medium text-base sm:text-lg hover:bg-cyan-dark transition-all duration-300 hover:-translate-y-0.5">
+                    Join Us
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Transformation Section -->
+    <div class="relative min-h-[400px] sm:min-h-[500px] bg-cover bg-center bg-no-repeat flex items-center justify-center" style="background-image: url('assets/transformation_bg.jpg');">
+        <div class="absolute inset-0 bg-black/50"></div>
+        <div class="relative z-10 text-center px-4">
+            <h2 class="font-playfair font-semibold text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-white mb-8 sm:mb-10 leading-tight tracking-wide">
+                BEGIN YOUR<br>TRANSFORMATION
+            </h2>
+            <a href="#contact" class="inline-block bg-cyan-light text-white px-10 sm:px-12 py-4 sm:py-5 rounded-full font-playfair font-medium text-lg sm:text-xl hover:bg-cyan-dark transition-all duration-300 hover:-translate-y-0.5">
+                Book a Consultation
+            </a>
+        </div>
+    </div>
+
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav-menu');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        // Close menu when clicking on a link
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('active');
+            });
+        });
+
+        // Testimonial Carousel
+        let currentTestimonial = 0;
+        const testimonials = document.querySelectorAll('.testimonial-item');
+        const totalTestimonials = testimonials.length;
+
+        function showTestimonial(index) {
+            testimonials.forEach(testimonial => testimonial.classList.remove('active'));
+            testimonials[index].classList.add('active');
+        }
+
+        const leftArrow = document.querySelectorAll('.testimonial-arrow')[0];
+        const rightArrow = document.querySelectorAll('.testimonial-arrow')[1];
+
+        if (leftArrow) {
+            leftArrow.addEventListener('click', () => {
+                currentTestimonial = (currentTestimonial - 1 + totalTestimonials) % totalTestimonials;
+                showTestimonial(currentTestimonial);
+            });
+        }
+
+        if (rightArrow) {
+            rightArrow.addEventListener('click', () => {
+                currentTestimonial = (currentTestimonial + 1) % totalTestimonials;
+                showTestimonial(currentTestimonial);
+            });
+        }
+    </script>
+
+</body>
+</html>
